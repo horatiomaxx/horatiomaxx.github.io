@@ -14,7 +14,7 @@
       <!-- navbar -->
       <nav class = "navbar">
         <div class = "brand-and-toggler">
-          <a href = "Home Page.html" class = "wscbrand">
+          <a href = "Home Page.html" class = "hwbrand">
             Horatio Wong's Sexy Cock
           </a>
           <button type = "button" class = "navbar-toggler" id = "navbar-toggler">
