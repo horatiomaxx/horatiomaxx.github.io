@@ -63,11 +63,11 @@ img{
 /* header banners and titles */
 .landing{
     height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(images/landing.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(landing.jpg) center/cover no-repeat fixed;
 }
 .header{
     height: 50vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(images/banner.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(banner.jpg) center/cover no-repeat fixed;
 }
 
 /* title css */
