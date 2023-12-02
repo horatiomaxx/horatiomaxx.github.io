@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #f4f2f2;
+    --grey: #efeeee;
+    --dark: #7c7c7c;
+    --darker: #3c3c3c;
+    --darkest: #2f2f30;
+    --ochre: #e3b70a;
+    --lightOchre: #e3b701;
+}
+
+/* basic elements */
+h1, h2, h3, h4, h5, h6{
+    margin: 0.5rem 0;
+    font-family: 'Corbel', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+}
+ul li{
+    list-style-type: none;
+}
+body{
+    line-height: 1.6;
+    font-family: 'Leelawadee', sans-serif;
+}
+button{
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+/* basic classes */
+.padding5{
+    padding: 5rem 0;
+}
+.text-1, .text-2{
+    margin: 0.5rem 0;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+.text-1{
+    color: var(--darkest);
+}
+.text-2{
+    color: var(--grey);
+}
+.container{
+    width: 95vw;
+    margin: 0 auto;
+}
+
+
+/* header banners and titles */
+.landing{
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(images/landing.jpg) center/cover no-repeat fixed;
+}
+.header{
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(images/banner.jpg) center/cover no-repeat fixed;
+}
+
+/* title css */
+.title{
+    padding: 1.5rem 0;
+    text-align: center;
+}
+.title-text{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Corbel', sans-serif;
+    letter-spacing: 8px;
+}
+.title-subtext{
+    text-transform: capitalize;
+    word-spacing: 5px;
+    border-left: 3px solid var(--darkest);
+    padding-left: 1.5rem;
+    display: inline-block;
+}
+.title-subtext-home{
+    text-transform: uppercase;
+    word-spacing: 5px;
+    border-left: 3px solid var(--darkest);
+    padding-left: 1.5rem;
+    display: inline-block;
+}
+
+/* For Navbar*/
+.wscbrand{
+    font-size: 1.85rem;
+    font-weight: 700;
+}
+.navbar{
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 4px var(--grey);
+}
+.brand-and-toggler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 3.5vw;
+}
+.navbar-toggler{
+    color: var(--ochre);
+    background: none;
+    padding: 0.1rem 0.4rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-toggler:hover{
+    background: var(--darkest);
+    color: #fff;
+}
+.nav-item{
+    padding: 0.5rem 3.5vw;
+    transition: background 0.4s ease-in-out;
+    cursor: pointer;
+}
+.nav-item:hover{
+    background: var(--ochre);
+}
+.nav-link{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* for smaller devices or mobile devices navbar */
+.navbar-collapse{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.showNav{
+    height: 230px;
+    padding-top: 0.7rem;
+}
+
+/* Landing Page css*/
+.landing-header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-line{
+    width: 200px;
+    height: 3px;
+    background: var(--darkest);
+    margin: 0 auto;
+}
+.landing-title span{
+    display: block;
+    text-align: center;
+}
+.landing-title span:first-of-type{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: 'Corbel', sans-serif;
+    letter-spacing: 4px;
+    margin: 2rem;
+}
+.landing-title span:last-of-type{
+    font-size: 3.2rem;
+    text-transform: capitalize;
+}
+.landing-btn{
+    display: block;
+    margin: 2rem auto;
+    text-transform: capitalize;
+    font-weight: 800;
+    border: 3px solid var(--darkest);
+    background: transparent;
+    padding: 0.9rem 3rem;
+    transition: all 0.4s ease-in-out;
+}
+.landing-btn:hover{
+    color: white;
+    background: var(--darkest);
+}
+.landing-content{
+    background: rgba(245, 245, 245, 0.85);
+    padding: 3rem 0;
+    transition: background 0.5s ease-in-out;
+}
+.landing-content:hover{
+    background: rgba(245, 245, 245, 1);
+}
+
+/* home css */
+.home-item{
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+}
+.home-icon{
+    font-size: 2rem;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: var(--lightOchre);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1.6rem;
+    transition: all 0.3s ease;
+}
+.home-icon:hover{
+    transform: translateY(-5px);
+    background: var(--darker);
+}
+.home-title{
+    color: var(--darker);
+}
+.home-btn{
+    text-transform: capitalize;
+    background: var(--darkest);
+    color: white;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 1rem auto 0;
+    transition: all 0.4s ease-in-out;
+}
+.home-btn:hover{
+    opacity: 0.8;
+}
+.underline{
+    background: var(--grey);
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 2rem 0;
+}
+.home-wrapper-2 > div{
+    margin: 3rem 0;
+}
+
+
+/* practiceareas */
+.pa{
+    background: var(--white);
+}
+.imgs-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.img-item{
+    margin: 1rem;
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.6s ease opacity, 0.6s ease transform;
+}
+.slider {
+    overflow-x: auto;
+    white-space: nowrap;
+} 
+.slider-content {
+    display: inline-block;
+}
+.content-item {
+    display: inline-block;
+    width: 400px;
+    margin-right: 5px;
+    position: relative;
+}
+.content-title {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    text-align: center;
+ }
+  
+.content-item:hover .content-title {
+    display: block;
+}
+.desc-box {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.desc-box:hover{
+    background: var(--lightOchre);
+    color: var(--grey);
+}
+
+/* lawyers */
+.lawyer-wrapper{
+    flex-wrap: wrap;
+    display: flex;
+    padding: 2rem 0;
+}
+.lawyer-item{
+    margin: 1.45rem 0;
+    transition: all 0.5s ease;
+}
+.lawyer-item:hover{
+    background: var(--lightOchre);
+    color: var(--grey);
+}
+.lawyer-description{
+    text-align: center;
+}
+.hidden-description {
+    display: none;
+  }
+  
+.show {
+    display: block;
+}
+  
+
+/* contact */
+.contact{
+    background: var(--grey);
+}
+.contact-info{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-info-item{
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.contact-info-item span{
+    font-size: 2rem;
+    color: var(--darkest);
+}
+.contact-form{
+    margin: 1rem;
+}
+.form-control, textarea{
+    width: 100%;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.9rem 0.6rem;
+    margin: 0.8rem 0;
+    border: 1px solid var(--dark);
+}
+.contact-form textarea{
+    height: 150px;
+}
+.submit-btn{
+    margin-top: 1.2rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    background: white;
+    border-width: 2.5px;
+    transition: all 0.5s ease;
+}
+.submit-btn:hover{
+    background: var(--dark);
+    color: white;
+}
+
+/* contact map */
+.map-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+}
+.map-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+.footer-bg{
+    height: 300px;
+    background: linear-gradient(rgba(255,255, 255, 0.5), rgba(255, 255, 255, 0.6)), url(images/footer.jpg) center/cover no-repeat;
+}
+.footer-icons{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon-ele{
+    background: var(--darkest);
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    transition: all 0.5s ease-in-out;
+}
+.footer-icon-ele:hover{
+    background: var(--ochre);
+}
+.footer-text{
+    text-align: center;
+    background: var(--darkest);
+    padding: 2.4rem;
+}
+.footer-text .text-light{
+    color: white;
+}
+
+
+/* For Media */
+@media screen and (min-width: 550px){
+    .home-wrapper-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home-item{
+        flex: 0 0 50%;
+    }
+    .imgs-group{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .lawyer-item{
+        margin: 1.5rem 1rem;
+        flex: 0 0 calc(50% - 2rem);
+    }
+    .contact-info-item{
+        flex: 0 0 33.33%;
+    }
+    .contact-form-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.8rem;
+    }
+    .contact-form textarea{
+        height: 175px;
+    }
+    .submit-btn{
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 900px){
+    .container{
+        width: 90vw;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .navbar-collapse{
+        flex: 1 0 auto;
+        padding-right: 7.5vw;
+        display: flex!important;
+        height: auto;
+        justify-content: flex-end;
+        transition: none;
+    }
+    .brand-and-toggler{
+        padding-left: 7.5vw;
+        padding-right: 0;
+    }
+    .navbar-brand{
+        font-size: 2.3rem;
+    }
+    .nav-item{
+        padding: 0.75rem 1rem;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    .navbar-nav{
+        display: flex;
+    }
+    .home-wrapper-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .home-wrapper-2 > div{
+        margin: 2rem;
+    }
+    .lawyer-item{
+        flex: 0 0 calc(33.33% - 2rem);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .home-item{
+        flex: 0 0 33.33%;
+        text-align: left;
+    }
+    .home-icon{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 10px;
+    }
+}
