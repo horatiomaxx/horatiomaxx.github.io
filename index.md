@@ -9,8 +9,8 @@ order: 1
 	<div class="container">
 <!-- 		<img src="{{ "/assets/img/logo.svg" | relative_url }}"> -->
 		<h1 class="section-heading">Horatio Wong</h1>
-		<h2 class="section-description"> Physicist &#9679; Photographer &#9679; Videographer
-		</h2>
+		<h3 class="section-description"> Physicist &#9679; Photographer &#9679; Videographer
+		</h3>
 		<div id="navbar-wrapper">
 			<div id="navbar">
 <!-- 				<img id="brand" class="hide" src="{{ "/assets/img/logo.svg" | relative_url }}"> -->
