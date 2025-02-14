@@ -397,6 +397,7 @@ form {
   display: block;  /* Makes the entire h1 clickable */
   width: 100%;     /* Ensures it spans the full heading width */
   text-align: center;
+  text-decoration: none;  /* Removes underline */
 }
 .section-heading,
 .section-description {
