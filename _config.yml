@@ -1,10 +1,10 @@
 remote_theme: jekyll-theme-el_photo
-title: El_photography
+title: 
 url: https://samd97.github.io/el_photo/
 baseurl: 
 
-author: Disha Patel
-description: Discovering the world with my vision.
+author: Horatio Wong
+description: 
 
 include: ['_pages']
 
