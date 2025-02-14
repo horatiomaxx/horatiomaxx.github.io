@@ -9,7 +9,7 @@ order: 1
 	<div class="container">
 <!-- 		<img src="{{ "/assets/img/logo.svg" | relative_url }}"> -->
 		<h1 class="section-heading"><a class="button" href="{{ horatiowong.com }}">Horatio Wong</a> </h1>
-		<h4 class="section-description"> Photographer &#9679; Physicist &#9679; Videographer
+		<h4 class="section-description"> Photographer &#8226; Physicist &#8226; Videographer
 		</h4>
 		<div id="navbar-wrapper">
 			<div id="navbar">
