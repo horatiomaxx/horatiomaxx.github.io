@@ -164,7 +164,12 @@ p {
   margin-top: 0; }
 .main p {
   text-align: justify; }
-
+  
+.clickable-heading {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits text color from parent */
+  display: inline-block; /* Ensures it behaves like a block if needed */
+}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -235,8 +240,6 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #333;
   border-color: #333; }
-
-
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
