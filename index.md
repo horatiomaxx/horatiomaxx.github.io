@@ -8,7 +8,7 @@ order: 1
 <div class="section header">
 	<div class="container">
 <!-- 		<img src="{{ "/assets/img/logo.svg" | relative_url }}"> -->
-		<h1 class="section-heading">Horatio Wong <a class="button" href="{{ horatiowong.com }}">{{ page.title }}</a> </h1>
+		<h1 class="section-heading"><a class="button" href="{{ horatiowong.com }}">{{ Horatio Wong }}</a> </h1>
 		<h4 class="section-description"> Photographer &#9679; Physicist &#9679; Videographer
 		</h4>
 		<div id="navbar-wrapper">
