@@ -164,7 +164,6 @@ p {
   margin-top: 0; }
 .main p {
   text-align: justify; }
-  
 .clickable-heading {
   text-decoration: none; /* Removes underline */
   color: inherit; /* Inherits text color from parent */
@@ -174,7 +173,8 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #1EAEDB;
+  text-decoration: none; }
 a:hover {
   color: #0FA0CE; }
 .footer a {
