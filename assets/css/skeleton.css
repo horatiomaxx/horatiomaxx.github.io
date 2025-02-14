@@ -390,6 +390,11 @@ form {
 .section {
   padding: 2rem 0;
   text-align: center; }
+.section-heading a {
+  display: block;  /* Makes the entire h1 clickable */
+  width: 100%;     /* Ensures it spans the full heading width */
+  text-align: center;
+}
 .section-heading,
 .section-description {
   margin-bottom: 1.2rem; }
