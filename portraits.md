@@ -1,6 +1,6 @@
 ---
 title: portraits
-layout: default
+layout: rest
 description: I try to make people pose sometimes.
 type: parent
 order: 3
